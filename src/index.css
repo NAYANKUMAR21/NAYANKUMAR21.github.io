@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+}
+:root {
+  --red: #f5f2f2;
+  --red-dark: #eee1e1;
+  --red-text: #e54c4c;            
+  /* name navbar and banner */
+  --dark-light: #181818;
+  --dark: #111;
+  --light: #e7dfdf;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--dark);
+  color: var(--light);
+}
+.container,
+.header-inner {
+  max-width: 1200px;
+  padding: 0px 20px;
+  width: 100%;
+  margin: auto;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+}
+header {
+  height: 100px;
+}
+header.sticky {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+  z-index: 10;
+  transition: 0.3s;
+  position: sticky;
+  top: 0;
+  background: var(--dark-light);
+  height: 70px;
+}
+header .header-inner {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.header-inner .logo {
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--red-text);
+  font-weight: 900;
+}
+.header-inner .link {
+  margin-right: 30px;
+  color: var(--light);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.header-inner .link:hover {
+  color: var(--red-text);
+}
+header .menu {
+  display: none;
+}
+header .mobile-links {
+  display: none;
+}
+
+/* =========== Banner */
+.banner .banner-wrapper {
+  height: calc(100vh - 120px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+.banner .banner-img {
+  position: relative;
+  flex: 0 0 50%;
+  max-width: 50%;
+  width: 100%;
+}
+.banner .banner-content h6 {
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--red-text);
+  font-weight: 600;
+}
+.banner .banner-content h3 {
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--light);
+  margin: 6px 0px;
+  font-weight: 900;
+}
+.banner .banner-content p {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--light);
+}
+
+.banner .banner-content .btn {
+  max-width: 150px;
+  height: 50px;
+  background: var(--red);
+  color: var(--light);
+  margin-top: 10px;
+  
+  background: linear-gradient(
+    to right,
+    var(--red-dark) 0%,
+    var(--red-dark) 21%,
+    var(--red) 100%
+  );
+  border: 1px solid var(--red-dark);
+  font-weight: 600;
+}
+.banner .banner-content .btn:hover {
+  background: transparent;
+}
+
+@media (max-width: 767px) {
+  header .links {
+    display: none;
+  }
+  header .menu {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  header .mobile-links.active {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 250px;
+    transition: 0.3s;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    background: var(--dark-light);
+    bottom: 0;
+    padding: 100px 40px;
+    z-index: 9;
+  }
+  header .mobile-links.active a {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--red-text);
+    line-height: 30px;
+    transition: 0.3s;
+    display: inline;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+  }
+  header .mobile-links.active a:hover {
+    border-color: var(--red-text);
+  }
+  .banner .banner-wrapper {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 50px 0px;
+  }
+  .banner .banner-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+ 
+}
+
+@media (max-width: 660px) {
+  .banner .banner-content h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .banner .banner-img {
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-bottom: 20px;
+  }
+ 
+}

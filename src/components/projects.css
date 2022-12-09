@@ -1,0 +1,31 @@
+#project-container{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    border: 2px solid rgb(0, 143, 143);
+    border-radius: 5px;
+    box-shadow: rgba(227, 217, 217, 0.15) 1.95px 1.95px 2.6px;
+}
+#project-container>div:nth-child(1){
+    width:40%;
+    /* height: 250px; */
+    padding: 15px;
+}
+#project-container>div:nth-child(2){
+    width:60%;
+    text-align: justify;
+    padding: 15px;
+}
+.projects-container{
+   gap: 40px;
+   display: flex;
+   flex-direction: column;
+}
+
+.stackName{
+    margin-top: 30px;
+}
+
+img{
+    width: 100%;
+}

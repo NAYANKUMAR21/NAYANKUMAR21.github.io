@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    width:90%;
+    margin: auto;
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+h1{
+    margin-bottom: 40px;
+}
+.container1>div{
+    display: flex;
+    align-items: center;
+    padding: 7px 0px;
+    gap:15px
+}
+.container1{
+    width: 50%;
+}
+a{
+    color: white;
+}
+.container2{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 15px;
+}
+#i1{
+    border-radius: 12px;
+    border: none;
+    padding: 20px 15px;
+}
+#i2{
+    border-radius: 12px;
+    border: none;
+    padding: 20px 15px;
+}
+#i3{
+    border-radius: 12px;
+    border: none;
+    padding: 50px 15px;
+}
+#btn{
+    width:fit-content;
+    border-radius: 12px;
+    color: white;
+    background-color: red;
+    padding: 10px 15px;
+}
+@media (max-width: 767px){
+    .container{
+        display: flex;
+        width:95%;
+        margin: auto;
+        padding-bottom: 100px;
+        margin-top: 50px;
+        gap: 50px;
+        flex-direction: column;
+    }
+    .container1,.container2{
+        width: 100%;
+    }
+}
