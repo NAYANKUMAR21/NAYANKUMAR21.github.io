@@ -26,7 +26,7 @@ const Aboutme = () => {
         <div>
           <video
             src="https://www.meesho.io/img/home/banner.mp4"
-            autoPlay
+            autoPlay="loop"
             on
             muted
           ></video>

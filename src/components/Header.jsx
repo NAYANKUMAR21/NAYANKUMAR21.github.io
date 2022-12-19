@@ -32,7 +32,7 @@ function Header() {
             Home
           </a>
           <a className="link" href="#aboutme">
-          About me
+            About me
           </a>
           <a className="link" href="#skills">
             Skills
@@ -73,7 +73,7 @@ function Header() {
         <a
           className="link"
           onClick={() => setActive(!active)}
-          href="https://drive.google.com/file/d/1cBdCxa0VSWFCFBgX80jegqT5tG0KOqjw/view"
+          href="https://drive.google.com/file/d/1-svc7URxPfzDAU9bJbR-fFCkRons7uGf/view"
         >
           Resume
         </a>
