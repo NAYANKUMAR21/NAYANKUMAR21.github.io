@@ -20,14 +20,21 @@ function Banner() {
               style={{
                 fontSize: "30px",
                 marginBottom: "20px",
+                marginTop: "50px",
+                color: "#e54c4c",
               }}
             >
               Hello, I'm Nayan kumar
             </h6>
-            <h3>
-              Aspiring <span style={{ color: "#e54c4c" }}>MERN</span> stack
-              Developer
-            </h3>
+            <div
+              style={{ marginTop: "50px", fontSize: "25px" }}
+              className="AspiringBox"
+            >
+              <h1>
+                Aspiring <span style={{ color: "#e54c4c" }}>MERN</span> stack
+                Developer
+              </h1>
+            </div>
             {/* {
               <p align="center">
                 <a href="https://github.com/The-Young-Programmer">
@@ -35,7 +42,10 @@ function Banner() {
                 </a>
               </p>
             } */}
-            <div className="TypeCode">
+            <div
+              className="TypeCode"
+              style={{ marginTop: "50px", fontSize: "23px" }}
+            >
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter
@@ -59,19 +69,19 @@ function Banner() {
                 }}
               />
             </div>
-            <p style={{ marginBottom: "30px", lineHeight: "2" }}>
-              {/* Analytical and detail-oriented aspiring Full Stack Web
+            {/* <p style={{ marginBottom: "30px", lineHeight: "2" }}> */}
+            {/* Analytical and detail-oriented aspiring Full Stack Web
               Developer capable of writing production-ready code using
               MERN stack.Passionate about coding and intensely
               interested in working in a product-based company. */}
-              Full stack web developer with specialisation in JavaScript, HTML,
+            {/* Full stack web developer with specialisation in JavaScript, HTML,
               CSS , REACT , REST API , Git/GITHUB Object-Oriented design.
               Offering excellence in analytical decision making and articulate
               presenter with ability to communicate technical information with
               clear and concise manner. 450+ hours of coding and hands-on
-              experience in developing website features
-            </p>
-            <div className="BannerAllLinks">
+              experience in developing website features */}
+            {/* </p> */}
+            <div className="BannerAllLinks" style={{ marginTop: "50px" }}>
               <div>
                 <a href="https://github.com/NAYANKUMAR21">
                   <svg
@@ -128,10 +138,11 @@ function Banner() {
                   backgroundColor: "#e54c4c",
                   borderRadius: "5px",
                   // width: "40%",
+                  // border: "1px solid white",
                   border: "none",
-
+                  textAlign: "center",
                   padding: "14px 20px 14px 20px",
-
+                  marginTop: "50px",
                   fontSize: "20px",
                 }}
               >

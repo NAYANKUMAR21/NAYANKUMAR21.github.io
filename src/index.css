@@ -25,9 +25,9 @@ body {
 }
 .container,
 .header-inner {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   padding: 0px 20px;
-  width: 100%;
+  /* width: 100%; */
   margin: auto;
 }
 .btn {
@@ -87,72 +87,30 @@ header .mobile-links {
 }
 
 /* =========== Banner */
-.banner .banner-wrapper {
-  height: calc(100vh - 120px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0px;
-}
-.banner .banner-img {
-  position: relative;
-  flex: 0 0 50%;
-  max-width: 60%;
+/* .container {
+  border: 1px solid white;
+} */
+.banner-wrapper {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid blue; */
+  column-gap: 20px;
 }
-.banner .banner-content h6 {
-  font-size: 18px;
-  line-height: 26px;
-  color: var(--red-text);
-  font-weight: 600;
-}
-.banner .banner-content h3 {
-  font-size: 35px;
-  line-height: 50px;
-  color: var(--light);
-  margin: 6px 0px;
-  font-weight: 900;
-}
-.banner .banner-content p {
-  font-size: 16px;
-  line-height: 26px;
-  color: var(--light);
-}
-
-.banner .banner-content .btn {
-  max-width: 150px;
-  height: 50px;
-  background: var(--red);
-  color: var(--light);
-  margin-top: 10px;
-
-  background: linear-gradient(
-    to right,
-    var(--red-dark) 0%,
-    var(--red-dark) 21%,
-    var(--red) 100%
-  );
-  border: 1px solid var(--red-dark);
-  font-weight: 600;
-}
-.banner .banner-content .btn:hover {
-  background: transparent;
-}
-
-.BannerButton {
-  width: 40%;
-}
-.TypeCode {
-  font-size: 25px;
-  font-weight: bold;
+/* .banner-img {
+  border: 1px solid red;
+} */
+.banner-content {
+  margin-left: 160px;
 }
 .BannerAllLinks {
-  width: 40%;
-  margin-bottom: 30px;
   display: flex;
-  gap: 50px;
+  /* border: 1px solid white; */
+  /* justify-content: space-around; */
+  gap: 40px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   header .links {
     display: none;
   }
@@ -188,29 +146,20 @@ header .mobile-links {
   header .mobile-links.active a:hover {
     border-color: var(--red-text);
   }
-  .banner .banner-wrapper {
-    flex-wrap: wrap;
-    height: auto;
-    padding: 50px 0px;
+  .banner-wrapper {
+    display: grid;
   }
-  .banner .banner-img {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
+  .banner-img > img {
+    width: 100%;
   }
-  .banner-img {
-    margin: auto;
-    text-align: center;
-  }
-  .BannerButton {
-    text-align: center;
-    width: 70%;
+  .banner-content {
+    margin-left: 0px;
   }
   .BannerAllLinks {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
     justify-content: space-evenly;
+
   }
 }
 
