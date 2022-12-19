@@ -10,7 +10,7 @@
 :root {
   --red: #f5f2f2;
   --red-dark: #eee1e1;
-  --red-text: #e54c4c;            
+  --red-text: #e54c4c;
   /* name navbar and banner */
   --dark-light: #181818;
   --dark: #111;
@@ -56,7 +56,7 @@ header.sticky {
   height: 70px;
 }
 header .header-inner {
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,7 +97,7 @@ header .mobile-links {
 .banner .banner-img {
   position: relative;
   flex: 0 0 50%;
-  max-width: 50%;
+  max-width: 60%;
   width: 100%;
 }
 .banner .banner-content h6 {
@@ -107,7 +107,7 @@ header .mobile-links {
   font-weight: 600;
 }
 .banner .banner-content h3 {
-  font-size: 40px;
+  font-size: 35px;
   line-height: 50px;
   color: var(--light);
   margin: 6px 0px;
@@ -125,7 +125,7 @@ header .mobile-links {
   background: var(--red);
   color: var(--light);
   margin-top: 10px;
-  
+
   background: linear-gradient(
     to right,
     var(--red-dark) 0%,
@@ -139,6 +139,19 @@ header .mobile-links {
   background: transparent;
 }
 
+.BannerButton {
+  width: 40%;
+}
+.TypeCode {
+  font-size: 25px;
+  font-weight: bold;
+}
+.BannerAllLinks {
+  width: 40%;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 50px;
+}
 @media (max-width: 767px) {
   header .links {
     display: none;
@@ -185,7 +198,20 @@ header .mobile-links {
     max-width: 100%;
     margin-bottom: 20px;
   }
- 
+  .banner-img {
+    margin: auto;
+    text-align: center;
+  }
+  .BannerButton {
+    text-align: center;
+    width: 70%;
+  }
+  .BannerAllLinks {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+  }
 }
 
 @media (max-width: 660px) {
@@ -195,8 +221,21 @@ header .mobile-links {
   }
   .banner .banner-img {
     flex: 0 0 60%;
-    max-width: 60%;
+    max-width: 100%;
     margin-bottom: 20px;
   }
- 
+  .banner-img {
+    margin: auto;
+    text-align: center;
+  }
+  .BannerButton {
+    text-align: center;
+    width: 70%;
+  }
+  .BannerAllLinks {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+  }
 }

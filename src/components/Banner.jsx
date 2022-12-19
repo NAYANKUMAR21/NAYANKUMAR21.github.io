@@ -1,6 +1,7 @@
 import React from "react";
 import photo from "../Assets/IMG_6192.jpg";
 import myresume from "../Assets/Nayan_Kumar_Resume.pdf";
+import Typewriter from "typewriter-effect";
 function Banner() {
   return (
     <section className="banner" id="banner">
@@ -15,16 +16,54 @@ function Banner() {
             />
           </div>
           <div className="banner-content">
-            <h6 style={{ fontSize: "30px", marginBottom: "20px" }}>
+            <h6
+              style={{
+                fontSize: "30px",
+                marginBottom: "20px",
+              }}
+            >
               Hello, I'm Nayan kumar
             </h6>
-            <h3>MERN stack web Developer</h3>
-
+            <h3>
+              Aspiring <span style={{ color: "#e54c4c" }}>MERN</span> stack
+              Developer
+            </h3>
+            {/* {
+              <p align="center">
+                <a href="https://github.com/The-Young-Programmer">
+                  <img src="https://readme-typing-svg.herokuapp.com/?lines=👨‍💻%20Fullstack%20Web%20Developer;💬%20Ask%20me%20about%20HTML,%20CSS,%20Javascript;🔰%20Always%20learning%20new%20tech&font=Pacifico&center=true&width=850&height=120&color=58a6ff&vCenter=true&size=45%22" alt="selftyping letters"></img>
+                </a>
+              </p>
+            } */}
+            <div className="TypeCode">
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("FULL STACK WEB DEVELOPER")
+                    .start()
+                    .pauseFor(2000)
+                    .deleteAll();
+                  typewriter
+                    .typeString("A Tech Fanatic")
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .start()
+                    .pauseFor();
+                  //   .deleteAll()
+                  //   .start()
+                  //   .deleteAll();
+                  // typewriter
+                  //   .typeString("A FULL STACK DEVELOPER")
+                  //   .deleteAll()
+                  //   .start();
+                }}
+              />
+            </div>
             <p style={{ marginBottom: "30px", lineHeight: "2" }}>
               {/* Analytical and detail-oriented aspiring Full Stack Web
-Developer capable of writing production-ready code using
-MERN stack.Passionate about coding and intensely
-interested in working in a product-based company. */}
+              Developer capable of writing production-ready code using
+              MERN stack.Passionate about coding and intensely
+              interested in working in a product-based company. */}
               Full stack web developer with specialisation in JavaScript, HTML,
               CSS , REACT , REST API , Git/GITHUB Object-Oriented design.
               Offering excellence in analytical decision making and articulate
@@ -32,10 +71,7 @@ interested in working in a product-based company. */}
               clear and concise manner. 450+ hours of coding and hands-on
               experience in developing website features
             </p>
-            <div
-              className="allLinks"
-              style={{ display: "flex", gap: "50px", marginBottom: "20px" }}
-            >
+            <div className="BannerAllLinks">
               <div>
                 <a href="https://github.com/NAYANKUMAR21">
                   <svg
@@ -80,25 +116,35 @@ interested in working in a product-based company. */}
                 </a>
               </div>
             </div>
-            <button
-              style={{
-                border: "1px",
-                backgroundColor: "#e54c4c",
-                borderRadius: "5px",
-                width: "40%",
-                padding: "14px 20px 14px 20px",
-                fontSize: "20px",
-              }}
+
+            <div
+            // style={{
+            //   border: "1px solid white",
+            // }}
             >
-              <a
-                // href="https://drive.google.com/file/d/1-svc7URxPfzDAU9bJbR-fFCkRons7uGf/view"
-                href={myresume}
-                target="Nayan_Kumar_Resume.pdf"
-                download="Nayan_Kumar_Resume.pdf"
+              <button
+                className="BannerButton"
+                style={{
+                  backgroundColor: "#e54c4c",
+                  borderRadius: "5px",
+                  // width: "40%",
+                  border: "none",
+
+                  padding: "14px 20px 14px 20px",
+
+                  fontSize: "20px",
+                }}
               >
-                Download Resume
-              </a>
-            </button>
+                <a
+                  // href="https://drive.google.com/file/d/1-svc7URxPfzDAU9bJbR-fFCkRons7uGf/view"
+                  href={myresume}
+                  target="Nayan_Kumar_Resume.pdf"
+                  download="Nayan_Kumar_Resume.pdf"
+                >
+                  Download Resume
+                </a>
+              </button>
+            </div>
           </div>
         </div>
       </div>

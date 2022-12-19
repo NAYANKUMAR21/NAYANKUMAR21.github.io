@@ -36,9 +36,11 @@ const Menu = () => {
           <ul style={{ textDecoration: "none" }}>
             <a href="#banner">Home</a>
             <br />
-            <a href="#projects">Project</a>
-            <br />
             <a href="#skills">Skills</a>
+            <br />
+            <a href="#aboutme">About Me</a>
+            <br />
+            <a href="#projects">Project</a>
             <br />
             <a href="#contact">Contact</a>
             <br />

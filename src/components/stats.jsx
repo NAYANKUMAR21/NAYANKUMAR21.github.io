@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./stats.css";
 import "../App.css";
 // const Stats = () => {
 //   return (
@@ -52,8 +52,8 @@ import "../App.css";
 
 const Stats = () => {
   return (
-    <div>
-      <div style={{ width: "40%", margin: "auto", color: "rgb(0, 75, 145)" }}>
+    <div className="gitStats">
+      <div style={{ margin: "auto", color: "rgb(0, 75, 145)" }}>
         <a href="https://github.com/NAYANKUMAR21">
           <img
             src="https://github-readme-stats.vercel.app/api?username=NAYANKUMAR21&count_private=true&show_icons=true"

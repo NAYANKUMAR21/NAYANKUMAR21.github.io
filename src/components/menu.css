@@ -1,39 +1,48 @@
-.menu-list>ul{
-    text-decoration: none;
+/* .container {
+  border: 1px solid blue;
+} */
+/* .container sticky {
+  border: 1px solid blue;
+  width: 100%;
+} */
+.menu-list > ul {
+  text-decoration: none;
 }
-.menu-icon{
-    display: none;
+.menu-icon {
+  display: none;
+  width: 100%;
+  /* border: 1px solid blue; */
 }
-.menu-list{
-    position: relative;
-    
-    color:black;
-    background-color: white;
-    display: none;
-    border-radius: 12px;
-    padding: 20px 10px 20px 10px;
-    right:-20px;
-    top:60px;
-    z-index: 100;
+.menu-list {
+  position: relative;
+  width: 100%;
+  color: black;
+  background-color: white;
+  display: none;
+  border-radius: 12px;
+  padding: 20px 10px 20px 10px;
+  right: -20px;
+  top: 60px;
+  z-index: 100;
 }
-.menu-list a{
-    margin-top: 10px;
-    color: black;
+.menu-list a {
+  margin-top: 10px;
+  color: black;
 }
-.menu-list{
-    text-decoration: none;
+.menu-list {
+  text-decoration: none;
 }
-#burgir:hover>div{
-    display: block;
+#burgir:hover > div {
+  display: block;
 }
 
-.menu-list>ul>a:hover{
-color: red;
-text-decoration: none;
-cursor: pointer;
+.menu-list > ul > a:hover {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
 }
-@media (max-width:767px){
-    .menu-icon{
-        display: block;
-    }
+@media (max-width: 767px) {
+  .menu-icon {
+    display: block;
+  }
 }

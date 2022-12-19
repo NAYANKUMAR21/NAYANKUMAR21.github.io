@@ -52,13 +52,13 @@ const Project = () => {
       >
         My recent Works
       </p>
-      <div className="projects-container">
+      <div className="project-container">
         {projects.map((el) => (
           <div id="project-container">
             <div className="ProjectImage">
               <img src={el.img} alt="" />
             </div>
-            <div>
+            <div className="ProjectDescription">
               <div>
                 <h2>{el.name}</h2>
                 <p style={{ marginTop: "10px" }}>{el.para}</p>
@@ -69,7 +69,7 @@ const Project = () => {
                   <h3>{el.tech}</h3>
                 </span>
               </div>
-              <div style={{ marginTop: "20px", display: "flex", gap: "20px" }}>
+              <div style={{ marginTop: "20px", display: "flex", gap: "20px" }} className="ProjectLinks">
                 <div>
                   <a href={el.glink}>
                     <svg

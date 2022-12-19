@@ -1,0 +1,14 @@
+.gitStats > div {
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .gitStats > div {
+    width: 100%;
+  }
+}
+@media (max-width: 332px) {
+  .gitStats > div {
+    width: 100%;
+  }
+}

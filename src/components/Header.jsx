@@ -23,19 +23,22 @@ function Header() {
   return (
     <header className={`${stickyClass}`}>
       <div className="header-inner">
-        
         <span className="logo">Nayan Kumar</span>
-        <div><Menu/></div>
+        <div>
+          <Menu />
+        </div>
         <div className="links">
-            
           <a className="link" href="#banner">
             Home
           </a>
-          <a className="link" href="#projects">
-            Projects
+          <a className="link" href="#Aboutme">
+          About me
           </a>
           <a className="link" href="#skills">
             Skills
+          </a>
+          <a className="link" href="#projects">
+            Projects
           </a>
           <a className="link" href="#contact">
             Contact
@@ -43,7 +46,10 @@ function Header() {
           {/* <a className="link" target="_blank" href="https://drive.google.com/file/d/1-svc7URxPfzDAU9bJbR-fFCkRons7uGf/view">
             Resume
           </a> */}
-          <a className="link"  href="https://drive.google.com/file/d/1-svc7URxPfzDAU9bJbR-fFCkRons7uGf/view">
+          <a
+            className="link"
+            href="https://drive.google.com/file/d/1-svc7URxPfzDAU9bJbR-fFCkRons7uGf/view"
+          >
             Resume
           </a>
         </div>
@@ -53,13 +59,9 @@ function Header() {
           Home
         </a>
         <a className="link" onClick={() => setActive(!active)} href="#services">
-          About
+          About Me
         </a>
-        <a
-          className="link"
-          onClick={() => setActive(!active)}
-          href="#skills"
-        >
+        <a className="link" onClick={() => setActive(!active)} href="#skills">
           Skills
         </a>
         <a className="link" onClick={() => setActive(!active)} href="#projects">
@@ -68,7 +70,11 @@ function Header() {
         <a className="link" onClick={() => setActive(!active)} href="#contact">
           Contact
         </a>
-        <a className="link"  onClick={() => setActive(!active)} href="https://drive.google.com/file/d/1cBdCxa0VSWFCFBgX80jegqT5tG0KOqjw/view">
+        <a
+          className="link"
+          onClick={() => setActive(!active)}
+          href="https://drive.google.com/file/d/1cBdCxa0VSWFCFBgX80jegqT5tG0KOqjw/view"
+        >
           Resume
         </a>
       </div>
