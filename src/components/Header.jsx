@@ -31,7 +31,7 @@ function Header() {
           <a className="link" href="#banner">
             Home
           </a>
-          <a className="link" href="#Aboutme">
+          <a className="link" href="#aboutme">
           About me
           </a>
           <a className="link" href="#skills">
@@ -58,7 +58,7 @@ function Header() {
         <a className="link" onClick={() => setActive(!active)} href="#banner">
           Home
         </a>
-        <a className="link" onClick={() => setActive(!active)} href="#services">
+        <a className="link" onClick={() => setActive(!active)} href="#aboutme">
           About Me
         </a>
         <a className="link" onClick={() => setActive(!active)} href="#skills">

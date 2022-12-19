@@ -33,12 +33,14 @@ const projects = [
 ];
 const Project = () => {
   return (
-    <section id="projects">
+    <section id="projects" style={{}}>
       <h1
         style={{
+          marginTop: "150px",
           textAlign: "center",
           marginBottom: "0px",
           fontSize: "55px",
+          // marginTop: "50px",
         }}
       >
         Projects
@@ -69,7 +71,10 @@ const Project = () => {
                   <h3>{el.tech}</h3>
                 </span>
               </div>
-              <div style={{ marginTop: "20px", display: "flex", gap: "20px" }} className="ProjectLinks">
+              <div
+                style={{ marginTop: "20px", display: "flex", gap: "20px" }}
+                className="ProjectLinks"
+              >
                 <div>
                   <a href={el.glink}>
                     <svg

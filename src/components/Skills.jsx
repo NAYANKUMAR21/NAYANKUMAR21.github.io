@@ -10,7 +10,7 @@ const Skills = () => {
           textAlign: "center",
           marginBottom: "0px",
           fontSize: "55px",
-          marginTop: "100px",
+          marginTop: "500px",
         }}
       >
         Skills
