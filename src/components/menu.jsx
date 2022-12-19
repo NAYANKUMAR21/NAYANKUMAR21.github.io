@@ -44,7 +44,7 @@ const Menu = () => {
             <br />
             <a href="#contact">Contact</a>
             <br />
-            <a href="https://drive.google.com/file/d/1cBdCxa0VSWFCFBgX80jegqT5tG0KOqjw/view">
+            <a href="https://drive.google.com/file/d/1-svc7URxPfzDAU9bJbR-fFCkRons7uGf/view">
               Resume
             </a>
           </ul>

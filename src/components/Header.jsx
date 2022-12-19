@@ -62,7 +62,8 @@ function Header() {
           About Me
         </a>
         <a className="link" onClick={() => setActive(!active)} href="#skills">
-          Skills
+          {/* Skills */}
+          nAYAN
         </a>
         <a className="link" onClick={() => setActive(!active)} href="#projects">
           Projects
