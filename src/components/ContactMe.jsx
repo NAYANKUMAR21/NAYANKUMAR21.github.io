@@ -1,5 +1,24 @@
+import { useContext, useState } from "react";
+import { AuthContext } from "../COntext/Authentication";
 import "./ContactMe.css";
 const Contact = () => {
+  const { auth, postMail } = useContext(AuthContext);
+  const [post, setpost] = useState({
+    name: "",
+    email: "",
+    body: "",
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setpost({
+      ...post,
+      [name]: value,
+    });
+  };
+  const handleSubmit = () => {
+    console.log(post, auth);
+    postMail(post);
+  };
   return (
     <section className="container" id="contact" style={{ marginTop: "200px" }}>
       <div className="container1">
@@ -63,9 +82,39 @@ const Contact = () => {
         </div>
       </div>
       <div className="container2">
-        <input id="i1" type="text" placeholder="Your name" />
-        <input id="i2" type="text" placeholder="Your email" />
-        <input id="i3" type="text" placeholder="Your message" />
+        <input
+          id="i1"
+          value={post.name}
+          type="text"
+          name="name"
+          placeholder="Enter name"
+          onChange={handleChange}
+          style={{ fontSize: "20px" }}
+        />
+        <input
+          id="i2"
+          value={post.email}
+          type="email"
+          name="email"
+          placeholder="Enter email"
+          onChange={handleChange}
+          style={{ fontSize: "20px" }}
+        />
+        <textarea
+          name="body"
+          id="message"
+          rows="15"
+          value={post.body}
+          style={{
+            borderRadius: "15px",
+            paddingLeft: "10px",
+            paddingTop: "10px",
+            fontSize: "20px",
+          }}
+          onChange={handleChange}
+          placeholder="Enter message "
+        ></textarea>
+        {/* <input id="i3" type="text" placeholder="Your message" /> */}
         {/* <button id="btn">Submit</button> */}
         <button
           style={{
@@ -77,6 +126,7 @@ const Contact = () => {
             fontSize: "20px",
             color: "white",
           }}
+          onClick={handleSubmit}
         >
           Submit
         </button>

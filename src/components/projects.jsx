@@ -3,6 +3,24 @@ import "./projects.css";
 // import "./Project.css";
 const projects = [
   {
+    title: "Project-5",
+    name: "Stack-Box",
+    img: "https://img.freepik.com/premium-vector/message-bubbles-text-balloon-phone-dispaly-vector-design-template-messenger-chat_152104-731.jpg?w=2000",
+    glink: "https://github.com/suFi7867/chat-box",
+    llink: "https://stackbox.vercel.app/login",
+    tech: "React | CSS | Mongoose | MongoDB | express | Socket.io",
+    para: "Real-Time Chatting App .it allows you to communicate with your friend or collegue in web chat rooms. It enables you to send and receive messages. Chatting apps make it easier, simpler, and faster to connect with everyone and it is also easy to use",
+  },
+  {
+    title: "Project-4",
+    name: "GYM.com",
+    img: "https://i.ibb.co/WV4qFVq/Screenshot-2022-12-28-at-5-24-43-PM.png",
+    glink: "https://github.com/suFi7867/gym.com",
+    llink: "https://gymbro.vercel.app/",
+    tech: "React | CSS | Mongoose | MongoDB | Chakra-UI | Razor-Pay(payment integration) | express | JWT | Redis",
+    para: "GYM.com is a fitness e-commerce website which allows user to buy fitness products related to their Intrest. Our Website is paticularly integrated with payment gateway which has varied options to pay through and checkout the cart.",
+  },
+  {
     title: "Project-1",
     name: "Monday.com",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfKD3ZYZVoLGRWpFksBMkf0vuE1rMH6RfW6aUJEplk0w&s",
@@ -55,8 +73,8 @@ const Project = () => {
         My recent Works
       </p>
       <div className="project-container">
-        {projects.map((el) => (
-          <div id="project-container">
+        {projects.map((el, index) => (
+          <div id="project-container" key={index}>
             <div className="ProjectImage">
               <img src={el.img} alt="" />
             </div>

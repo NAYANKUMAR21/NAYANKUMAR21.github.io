@@ -7,6 +7,9 @@
   font-family: "Lato", sans-serif;
   text-decoration: none;
 }
+hr {
+  color: rgb(0, 48, 48);
+}
 :root {
   --red: #f5f2f2;
   --red-dark: #eee1e1;
@@ -117,6 +120,7 @@ header .mobile-links {
   header .menu {
     display: block;
     font-size: 20px;
+
     cursor: pointer;
   }
   header .mobile-links.active {
@@ -159,7 +163,6 @@ header .mobile-links {
     display: flex;
     gap: 20px;
     justify-content: space-evenly;
-
   }
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Menu from "./menu";
+import styles from "./Header.module.css";
 function Header() {
   const [stickyClass, setStickyClass] = useState("");
   const [active, setActive] = useState(false);
@@ -24,7 +25,7 @@ function Header() {
     <header className={`${stickyClass}`}>
       <div className="header-inner">
         <span className="logo">Nayan Kumar</span>
-        <div>
+        <div className={styles.navbarMenu}>
           <Menu />
         </div>
         <div className="links">
@@ -62,8 +63,7 @@ function Header() {
           About Me
         </a>
         <a className="link" onClick={() => setActive(!active)} href="#skills">
-          {/* Skills */}
-          nAYAN
+          Skills
         </a>
         <a className="link" onClick={() => setActive(!active)} href="#projects">
           Projects

@@ -49,16 +49,23 @@ function Banner() {
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter
-                    .typeString("FULL STACK WEB DEVELOPER")
+                    .typeString("FULL STACK WEB DEVELOPER !")
                     .start()
                     .pauseFor(2000)
                     .deleteAll();
                   typewriter
-                    .typeString("A Tech Fanatic")
+                    .typeString("A Tech Fanatic !")
                     .pauseFor(2000)
                     .deleteAll()
                     .start()
                     .pauseFor();
+                  typewriter
+                    .typeString("A technology enthusiast !")
+                    .pauseFor(50000)
+                    .deleteAll()
+                    .start()
+                    .pauseFor();
+                  //https://sufi.vercel.app/static/media/stackbox.216e1ead7c8acd95f868.gif
                   //   .deleteAll()
                   //   .start()
                   //   .deleteAll();

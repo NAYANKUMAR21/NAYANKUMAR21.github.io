@@ -34,7 +34,9 @@
 img {
   width: 100%;
 }
-
+.ProjectImage > img {
+  border-radius: 20px;
+}
 @media (max-width: 768px) {
   .ProjectImage {
     /* border: 1px solid white; */
