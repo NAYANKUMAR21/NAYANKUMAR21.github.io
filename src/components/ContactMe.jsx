@@ -17,7 +17,13 @@ const Contact = () => {
   };
   const handleSubmit = () => {
     console.log(post, auth);
-    postMail(post);
+    postMail(post).then((res) => {
+      setpost({
+        name: "",
+        email: "",
+        body: "",
+      });
+    });
   };
   return (
     <section className="container" id="contact" style={{ marginTop: "200px" }}>
