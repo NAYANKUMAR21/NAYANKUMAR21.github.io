@@ -26,7 +26,7 @@ const Menulist = () => {
         </a>
 
         <br />
-        <a href="https://drive.google.com/file/d/1-svc7URxPfzDAU9bJbR-fFCkRons7uGf/view">
+        <a href="https://drive.google.com/file/d/10JZkzbLZPW2SahyfbdY984eHYco9ZsJE/view">
           <p>Resume</p>
         </a>
       </ul>

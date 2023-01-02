@@ -49,7 +49,7 @@ function Header() {
           </a> */}
           <a
             className="link"
-            href="https://drive.google.com/file/d/1-svc7URxPfzDAU9bJbR-fFCkRons7uGf/view"
+            href="https://drive.google.com/file/d/10JZkzbLZPW2SahyfbdY984eHYco9ZsJE/view"
           >
             Resume
           </a>
@@ -74,7 +74,7 @@ function Header() {
         <a
           className="link"
           onClick={() => setActive(!active)}
-          href="https://drive.google.com/file/d/1-svc7URxPfzDAU9bJbR-fFCkRons7uGf/view"
+          href="https://drive.google.com/file/d/10JZkzbLZPW2SahyfbdY984eHYco9ZsJE/view"
         >
           Resume
         </a>
