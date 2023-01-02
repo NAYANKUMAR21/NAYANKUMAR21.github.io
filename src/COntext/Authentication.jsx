@@ -11,7 +11,10 @@ export default function AuthProvider({ children }) {
       return;
     }
     try {
-      const res = await axios.post("http://localhost:8080/auth/login", cred);
+      const res = await axios.post(
+        "https://nayanmail.onrender.com/auth/login",
+        cred
+      );
       if (res.data) {
         setAuth(true);
       }
@@ -27,7 +30,7 @@ export default function AuthProvider({ children }) {
 
   const getEmail = async () => {
     try {
-      const res = await axios.get("https://emailservice-72xj.onrender.com/");
+      const res = await axios.get("https://nayanmail.onrender.com/");
       console.log(res);
       if (res.data) {
         setData([...res.data]);
@@ -45,7 +48,7 @@ export default function AuthProvider({ children }) {
     }
     console.log(post, "fform the post mail");
     try {
-      let x = await axios.post("https://emailservice-72xj.onrender.com/", {
+      let x = await axios.post("https://nayanmail.onrender.com/", {
         email: post.email,
         name: post.name,
         body: post.body,
