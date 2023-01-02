@@ -131,6 +131,7 @@ const Contact = () => {
             padding: "14px 20px 14px 20px",
             fontSize: "20px",
             color: "white",
+            cursor: "pointer",
           }}
           onClick={handleSubmit}
         >
