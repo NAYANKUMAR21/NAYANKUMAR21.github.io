@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.cdad1ed8.css",
-    "main.js": "/static/js/main.b0b39713.js",
+    "main.js": "/static/js/main.e8c597a6.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/IMG_6192.jpg": "/static/media/IMG_6192.779dc8307607dd7f342b.jpg",
     "static/media/Nayan_Kumar_Resume.pdf": "/static/media/Nayan_Kumar_Resume.f82de279c58ba9b87ca4.pdf",
     "index.html": "/index.html",
     "main.cdad1ed8.css.map": "/static/css/main.cdad1ed8.css.map",
-    "main.b0b39713.js.map": "/static/js/main.b0b39713.js.map",
+    "main.e8c597a6.js.map": "/static/js/main.e8c597a6.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cdad1ed8.css",
-    "static/js/main.b0b39713.js"
+    "static/js/main.e8c597a6.js"
   ]
 }
