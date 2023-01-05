@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
@@ -8,6 +9,10 @@ import AuthProvider from "./COntext/Authentication";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Nayan Kumar</title>
+    </Helmet>
     <AuthProvider>
       <BrowserRouter>
         <App />

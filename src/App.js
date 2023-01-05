@@ -24,6 +24,10 @@ function App() {
       <Stats />
 
       <Contact /> */}
+      <link
+        rel="icon"
+        href="https://img.freepik.com/free-vector/human-hand-typing-computer-with-different-symbols-located-near-cup-coffee-side-view-open-laptop-flat-vector-illustration-new-technologies-millennials-work-concept_74855-21931.jpg?w=2000"
+      />
       <AllRoute />
     </div>
   );
