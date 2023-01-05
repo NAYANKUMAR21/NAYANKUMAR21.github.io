@@ -2,7 +2,9 @@ import GitHubCalendar from "react-github-calendar";
 // import ReactTooltip from "react-tooltip";
 const Calender = () => {
   return (
-    <div style={{ textAlign: "center", marginBottom: "60px", marginTop: "100px" }}>
+    <div
+      style={{ textAlign: "center", marginBottom: "60px", marginTop: "100px" }}
+    >
       <h1
         style={{
           textAlign: "center",
