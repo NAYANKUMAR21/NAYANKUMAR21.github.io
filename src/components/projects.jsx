@@ -70,7 +70,7 @@ const Project = () => {
           color: "teal",
         }}
       >
-        My recent Works
+        Recent Works
       </p>
       <div className="project-container">
         {projects.map((el, index) => (

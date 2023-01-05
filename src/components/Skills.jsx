@@ -22,7 +22,7 @@ const Skills = () => {
           color: "teal",
         }}
       >
-        My Technical level
+        Technical Skills
       </p>
       <h2>Frontend</h2>
       <div className="skillcontainer1">
