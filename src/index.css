@@ -107,6 +107,7 @@ header .mobile-links {
 .banner-content {
   margin-left: 160px;
 }
+
 .BannerAllLinks {
   display: flex;
   /* border: 1px solid white; */
@@ -117,6 +118,7 @@ header .mobile-links {
   header .links {
     display: none;
   }
+
   header .menu {
     display: block;
     font-size: 20px;
@@ -155,10 +157,13 @@ header .mobile-links {
   }
   .banner-img > img {
     width: 100%;
+    margin-left: 120px;
   }
+  
   .banner-content {
     margin-left: 0px;
   }
+
   .BannerAllLinks {
     display: flex;
     gap: 20px;
@@ -171,14 +176,30 @@ header .mobile-links {
     font-size: 30px;
     line-height: 40px;
   }
+  .banner-img > img {
+    margin-left: 0px;
+  }
   .banner .banner-img {
     flex: 0 0 60%;
     max-width: 100%;
     margin-bottom: 20px;
   }
+
+  .AspiringBox {
+    
+    text-align: center;
+  }
+  .TypeCode {
+    
+    text-align: center;
+  }
+  .banner-content > h6 {
+    text-align: center;
+  }
   .banner-img {
     margin: auto;
     text-align: center;
+    margin: 0px;
   }
   .BannerButton {
     text-align: center;

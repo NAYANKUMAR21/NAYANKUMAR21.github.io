@@ -2,7 +2,7 @@
   display: flex;
   width: 70%;
   margin: auto;
-  border: 2px solid rgb(0, 143, 143);
+  border: 1px solid rgba(5, 144, 144, 0.971);
   border-radius: 5px;
   box-shadow: rgba(227, 217, 217, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -72,7 +72,7 @@ img {
 }
 @media (max-width: 332px) {
   .ProjectImage {
-    border: 1px solid white;
+    
     width: 100%;
   }
   #project-container > div:nth-child(1) {
@@ -81,7 +81,7 @@ img {
     /* padding: 15px; */
   }
   #project-container {
-    border: 1px solid blue;
+    border: 1px solid rgba(5, 144, 144, 0.971);
     display: grid;
     margin-top: 20px;
     /* padding: 10px; */
@@ -96,7 +96,7 @@ img {
   }
   .ProjectLinks > div {
     /* width: 50%; */
-    border: 1px solid white;
+    
     text-align: center;
     margin: auto;
   }
