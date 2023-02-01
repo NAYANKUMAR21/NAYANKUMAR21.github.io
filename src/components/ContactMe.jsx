@@ -88,6 +88,8 @@ const Contact = () => {
         </div>
       </div>
       <div className="container2">
+        <h2 style={{ color: "#e54c4c" }}>How Can Help You !</h2>
+
         <input
           id="i1"
           value={post.name}

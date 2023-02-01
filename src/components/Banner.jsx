@@ -46,7 +46,7 @@ function Banner() {
               className="TypeCode"
               style={{ marginTop: "50px", fontSize: "23px" }}
             >
-              <Typewriter
+              {/* <Typewriter
                 onInit={(typewriter) => {
                   typewriter
                     .typeString("FULL STACK WEB DEVELOPER !")
@@ -74,6 +74,10 @@ function Banner() {
                   //   .deleteAll()
                   //   .start();
                 }}
+              /> */}
+              <img
+                src="https://readme-typing-svg.herokuapp.com?font=Open+Sans&weight=700&size=24&pause=1000&color=E54C4C&width=435&lines=A+Full+Stack+web+Developer;A+MERN+Developer;A+Tech+enthusiast+!;A+Passionate+Coder+!"
+                alt="Typing SVG"
               />
             </div>
             {/* <p style={{ marginBottom: "30px", lineHeight: "2" }}> */}
