@@ -1,4 +1,4 @@
-import "./Skill.css";
+import './Skill.css';
 // const frontend = ["JavaScript", "React", "HTML", "Chakra UI", "CSS"];
 // const backend = ["Node", "express", "MongoDB"];
 // const tools = ["VS Code", "Git", "Postman"];
@@ -7,19 +7,19 @@ const Skills = () => {
     <section className="skillcontainer" id="skills">
       <h1
         style={{
-          textAlign: "center",
-          marginBottom: "0px",
-          fontSize: "55px",
-          marginTop: "200px",
+          textAlign: 'center',
+          marginBottom: '0px',
+          fontSize: '55px',
+          marginTop: '200px',
         }}
       >
         Skills
       </h1>
       <p
         style={{
-          textAlign: "center",
-          marginBottom: "70px",
-          color: "teal",
+          textAlign: 'center',
+          marginBottom: '70px',
+          color: 'teal',
         }}
       >
         Technical Skills
