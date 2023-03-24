@@ -8,35 +8,59 @@
 .skillcontainer h2 {
   margin-bottom: 20px;
 }
-.skillcontainer2 > div {
-  display: flex;
-  flex-direction: column;
-  /* border: 1px solid red; */
-  border-radius: 5px;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15px 10px 15px;
-}
-.skillcontainer2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 70px;
-  margin-bottom: 40px;
-}
-.skillcontainer1 > div {
-  display: flex;
-  flex-direction: column;
-  /* border: 1px solid red; */
-  border-radius: 5px;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15px 10px 15px;
-}
+
 .skillcontainer1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 70px;
   margin-bottom: 40px;
+  /* border: 1px solid white; */
+  margin-top: 30px;
+  width: 70%;
+  padding: 30px;
+}
+.skillcontainer2 {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  margin-bottom: 40px; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-bottom: 40px;
+  /* border: 1px solid white; */
+  width: 60%;
+  padding: 30px;
+  margin-top: 30px;
+}
+.skillcontainer1 > div {
+  display: flex;
+  flex-direction: column;
+
+  width: 40%;
+  margin: auto;
+  border-radius: 5px;
+}
+.skillcontainer2 > div {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  width: 40%;
+  margin: auto;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px 10px 15px;
+}
+.skillcontainer1 > div > p {
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: 500;
+}
+.skillcontainer2 > div > p {
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: 500;
 }
 .skillcontainer3 > div {
   display: flex;
@@ -53,11 +77,17 @@
   gap: 70px;
   margin-bottom: 40px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .skillcontainer3,
   .skillcontainer1,
   .skillcontainer2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .skillcontainer1 > div {
+    width: 100%;
+  }
+  .skillcontainer2 > div {
+    width: 80%;
   }
 }
 @media (max-width: 332px) {
@@ -65,5 +95,11 @@
   .skillcontainer1,
   .skillcontainer2 {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .skillcontainer1 > div {
+    width: 100%;
+  }
+  .skillcontainer2 > div {
+    width: 80%;
   }
 }
