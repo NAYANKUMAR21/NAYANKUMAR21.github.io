@@ -1,6 +1,6 @@
 import React from "react";
-import photo from "../Assets/IMG_6192.jpg";
-import myresume from "../Assets/Nayan_Kumar_Resume.pdf";
+import photo from "../Assets/DP.jpeg";
+import myresume from "../Assets/NayanKumar_Resume.pdf";
 import Typewriter from "typewriter-effect";
 function Banner() {
   return (

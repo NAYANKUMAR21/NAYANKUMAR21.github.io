@@ -28,7 +28,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   margin-bottom: 40px;
-  /* border: 1px solid white; */
+  /* margin: auto; */
+
   width: 60%;
   padding: 30px;
   margin-top: 30px;
@@ -50,7 +51,7 @@
   border-radius: 5px;
   justify-content: center;
   align-items: center;
-  padding: 10px 15px 10px 15px;
+  /* padding: 10px 15px 10px 15px; */
 }
 .skillcontainer1 > div > p {
   font-size: 20px;
@@ -84,22 +85,39 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .skillcontainer1 > div {
-    width: 100%;
+    width: 80%;
   }
   .skillcontainer2 > div {
     width: 80%;
+  }
+  .skillcontainer1 {
+    width: 80%;
+
+    margin: auto;
+  }
+  .skillcontainer2 {
+    width: 80%;
+    margin: auto;
   }
 }
 @media (max-width: 332px) {
   .skillcontainer3,
   .skillcontainer1,
   .skillcontainer2 {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .skillcontainer1 > div {
-    width: 100%;
+    width: 80%;
   }
   .skillcontainer2 > div {
     width: 80%;
+  }
+  .skillcontainer1 {
+    width: 80%;
+    margin: auto;
+  }
+  .skillcontainer2 {
+    width: 80%;
+    margin: auto;
   }
 }

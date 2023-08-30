@@ -1,23 +1,23 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import Menu from "./menu";
-import styles from "./Header.module.css";
+import React from 'react';
+import { useState, useEffect } from 'react';
+import Menu from './menu';
+import styles from './Header.module.css';
 function Header() {
-  const [stickyClass, setStickyClass] = useState("");
+  const [stickyClass, setStickyClass] = useState('');
   const [active, setActive] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", stickNavbar);
+    window.addEventListener('scroll', stickNavbar);
 
     return () => {
-      window.removeEventListener("scroll", stickNavbar);
+      window.removeEventListener('scroll', stickNavbar);
     };
   }, []);
 
   const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      windowHeight > 1 ? setStickyClass("sticky") : setStickyClass("");
+      windowHeight > 1 ? setStickyClass('sticky') : setStickyClass('');
     }
   };
 
@@ -51,13 +51,14 @@ function Header() {
             className="link"
             target="_blank"
             rel="noreferrer"
-            href="https://drive.google.com/file/d/1RiF_oklvHFn-cxvUh8Ptl2337CG0u66k/view?usp=sharing"
+            // href="https://drive.google.com/file/d/1RiF_oklvHFn-cxvUh8Ptl2337CG0u66k/view?usp=sharing"
+            href="https://drive.google.com/file/d/1_y6sJV-kQ__wTzVASW7pyRymi-rJa8Vp/view?usp=share_link"
           >
             Resume
           </a>
         </div>
       </div>
-      <div className={`mobile-links ${active ? "active" : ""}`}>
+      <div className={`mobile-links ${active ? 'active' : ''}`}>
         <a className="link" onClick={() => setActive(!active)} href="#banner">
           Home
         </a>

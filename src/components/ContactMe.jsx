@@ -1,12 +1,12 @@
-import { useContext, useState } from "react";
-import { AuthContext } from "../COntext/Authentication";
-import "./ContactMe.css";
+import { useContext, useState } from 'react';
+import { AuthContext } from '../COntext/Authentication';
+import './ContactMe.css';
 const Contact = () => {
   const { auth, postMail } = useContext(AuthContext);
   const [post, setpost] = useState({
-    name: "",
-    email: "",
-    body: "",
+    name: '',
+    email: '',
+    body: '',
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,19 +19,19 @@ const Contact = () => {
     console.log(post, auth);
     postMail(post).then((res) => {
       setpost({
-        name: "",
-        email: "",
-        body: "",
+        name: '',
+        email: '',
+        body: '',
       });
     });
   };
   return (
-    <section className="container" id="contact" style={{ marginTop: "200px" }}>
+    <section className="container" id="contact" style={{ marginTop: '200px' }}>
       <div className="container1">
         <h1
           style={{
-            marginBottom: "20px",
-            fontSize: "30px",
+            marginBottom: '20px',
+            fontSize: '30px',
           }}
         >
           Contact Details
@@ -88,7 +88,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="container2">
-        <h2 style={{ color: "#e54c4c" }}>How Can Help You !</h2>
+        <h2 style={{ color: '#e54c4c' }}>How Can Help You !</h2>
 
         <input
           id="i1"
@@ -97,7 +97,7 @@ const Contact = () => {
           name="name"
           placeholder="Enter name"
           onChange={handleChange}
-          style={{ fontSize: "20px" }}
+          style={{ fontSize: '20px' }}
         />
         <input
           id="i2"
@@ -106,7 +106,7 @@ const Contact = () => {
           name="email"
           placeholder="Enter email"
           onChange={handleChange}
-          style={{ fontSize: "20px" }}
+          style={{ fontSize: '20px' }}
         />
         <textarea
           name="body"
@@ -114,10 +114,10 @@ const Contact = () => {
           rows="15"
           value={post.body}
           style={{
-            borderRadius: "15px",
-            paddingLeft: "10px",
-            paddingTop: "10px",
-            fontSize: "20px",
+            borderRadius: '15px',
+            paddingLeft: '10px',
+            paddingTop: '10px',
+            fontSize: '20px',
           }}
           onChange={handleChange}
           placeholder="Enter message "
@@ -126,14 +126,14 @@ const Contact = () => {
         {/* <button id="btn">Submit</button> */}
         <button
           style={{
-            border: "1px",
-            backgroundColor: "#e54c4c",
-            borderRadius: "5px",
-            width: "40%",
-            padding: "14px 20px 14px 20px",
-            fontSize: "20px",
-            color: "white",
-            cursor: "pointer",
+            border: '1px',
+            backgroundColor: '#e54c4c',
+            borderRadius: '5px',
+            width: '40%',
+            padding: '14px 20px 14px 20px',
+            fontSize: '20px',
+            color: 'white',
+            cursor: 'pointer',
           }}
           onClick={handleSubmit}
         >

@@ -1,23 +1,23 @@
-import React from "react";
-import "./Aboutme.css";
+import React from 'react';
+import './Aboutme.css';
 const Aboutme = () => {
   return (
     <section id="aboutme">
       <h1
         style={{
-          marginTop: "200px",
-          textAlign: "center",
-          marginBottom: "0px",
-          fontSize: "55px",
+          marginTop: '200px',
+          textAlign: 'center',
+          marginBottom: '0px',
+          fontSize: '55px',
         }}
       >
         About Me
       </h1>
       <p
         style={{
-          textAlign: "center",
-          marginBottom: "70px",
-          color: "teal",
+          textAlign: 'center',
+          marginBottom: '70px',
+          color: 'teal',
         }}
       >
         My Self
@@ -32,7 +32,7 @@ const Aboutme = () => {
           ></video>
         </div>
         <div>
-          <p style={{ marginBottom: "30px" }}>
+          <p style={{ marginBottom: '30px', textAlign: 'justify' }}>
             {/* Analytical and detail-oriented aspiring Full Stack Web
               Developer capable of writing production-ready code using
               MERN stack.Passionate about coding and intensely
