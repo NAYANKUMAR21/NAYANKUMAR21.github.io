@@ -1,7 +1,7 @@
-import React from "react";
-import photo from "../Assets/DP.jpeg";
-import myresume from "../Assets/NayanKumar_Resume.pdf";
-import Typewriter from "typewriter-effect";
+import React from 'react';
+import photo from '../Assets/DP.jpeg';
+import myresume from '../Assets/NayanKumar_Resume.pdf';
+import Typewriter from 'typewriter-effect';
 function Banner() {
   return (
     <section className="banner" id="banner">
@@ -9,7 +9,7 @@ function Banner() {
         <div className="banner-wrapper">
           <div className="banner-img">
             <img
-              style={{ width: "300px", borderRadius: "2%" }}
+              style={{ width: '300px', borderRadius: '2%' }}
               // src="/profile_Pic.jpg"
               src={photo}
               alt=""
@@ -18,20 +18,20 @@ function Banner() {
           <div className="banner-content">
             <h6
               style={{
-                fontSize: "30px",
-                marginBottom: "20px",
-                marginTop: "50px",
-                color: "#e54c4c",
+                fontSize: '30px',
+                marginBottom: '20px',
+                marginTop: '50px',
+                color: '#e54c4c',
               }}
             >
               Hello, I'm Nayan kumar
             </h6>
             <div
-              style={{ marginTop: "50px", fontSize: "25px" }}
+              style={{ marginTop: '50px', fontSize: '25px' }}
               className="AspiringBox"
             >
               <h1>
-                Aspiring <span style={{ color: "#e54c4c" }}>MERN</span> stack
+                Aspiring <span style={{ color: '#e54c4c' }}>MERN</span> stack
                 Developer
               </h1>
             </div>
@@ -44,7 +44,7 @@ function Banner() {
             } */}
             <div
               className="TypeCode"
-              style={{ marginTop: "50px", fontSize: "23px" }}
+              style={{ marginTop: '50px', fontSize: '23px' }}
             >
               {/* <Typewriter
                 onInit={(typewriter) => {
@@ -92,9 +92,9 @@ function Banner() {
               clear and concise manner. 450+ hours of coding and hands-on
               experience in developing website features */}
             {/* </p> */}
-            <div className="BannerAllLinks" style={{ marginTop: "50px" }}>
+            <div className="BannerAllLinks" style={{ marginTop: '50px' }}>
               <div>
-                <a href="https://github.com/NAYANKUMAR21">
+                <a href="https://github.com/NAYANKUMAR21" target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30px"
@@ -108,7 +108,10 @@ function Banner() {
                 </a>
               </div>
               <div>
-                <a href="https://www.linkedin.com/in/nayan-kumar-/">
+                <a
+                  href="https://www.linkedin.com/in/nayan-kumar-/"
+                  target="_blank"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30px"
@@ -122,7 +125,7 @@ function Banner() {
                 </a>
               </div>
               <div>
-                <a href="mailto:naayaankumar@gmail.com">
+                <a href="mailto:naayaankumar@gmail.com" target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30px"
@@ -146,15 +149,15 @@ function Banner() {
               <button
                 className="BannerButton"
                 style={{
-                  backgroundColor: "#e54c4c",
-                  borderRadius: "5px",
+                  backgroundColor: '#e54c4c',
+                  borderRadius: '5px',
                   // width: "40%",
                   // border: "1px solid white",
-                  border: "none",
-                  textAlign: "center",
-                  padding: "14px 20px 14px 20px",
-                  marginTop: "50px",
-                  fontSize: "20px",
+                  border: 'none',
+                  textAlign: 'center',
+                  padding: '14px 20px 14px 20px',
+                  marginTop: '50px',
+                  fontSize: '20px',
                 }}
               >
                 <a
